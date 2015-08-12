@@ -10,4 +10,7 @@
 
 @interface PQKeyboardManagerView : UIScrollView
 
+// It allows to turn on/off the keyboard dismiss on tap gesture. Default value is YES.
+@property (nonatomic) BOOL dismissKeyboardOnTap;
+
 @end

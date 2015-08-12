@@ -11,17 +11,35 @@
 @interface PQKeyboardManagerView ()
 
 @property (assign) UITextField *activeField;
+@property (strong) UITapGestureRecognizer *tap;
 
 @end
 
 @implementation PQKeyboardManagerView
 
 - (void)didMoveToSuperview {
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
-    [self addGestureRecognizer:tap];
+    self.dismissKeyboardOnTap = YES;
     
+    // Register the scrollview to observe the text field notifications
     [self registerForKeyboardNotifications];
+
+    // Register the scrollview to observe the keyboard notifications
     [self registerForTextFieldNotifications];
+}
+
+- (void)setDismissKeyboardOnTap:(BOOL)dismissKeyboardOnTap {
+    if (_dismissKeyboardOnTap != dismissKeyboardOnTap) {
+        // update the dismiss flag and add/remove the tap gesture accordingly
+        _dismissKeyboardOnTap = dismissKeyboardOnTap;
+
+        if (_dismissKeyboardOnTap) {
+            self.tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+            [self addGestureRecognizer:self.tap];
+        } else {
+            [self removeGestureRecognizer:self.tap];
+            self.tap = nil;
+        }
+    }
 }
 
 - (void)dismissKeyboard {
@@ -44,11 +62,13 @@
 
 - (void)textFieldDidBeginEditingNotification:(NSNotification *)notification
 {
+    // get the current active text field
     self.activeField = notification.object;
 }
 
 - (void)textFieldDidEndEditingNotification:(NSNotification *)notification
 {
+    // reset the active text field
     self.activeField = nil;
 }
 
@@ -66,18 +86,18 @@
     
 }
 
-// Called when the UIKeyboardDidShowNotification is sent.
 - (void)keyboardWasShown:(NSNotification*)aNotification
 {
-    NSDictionary* info = [aNotification userInfo];
+    // Retrieve the keyboard size
+    NSDictionary *info = [aNotification userInfo];
     CGSize kbSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
     
+    // Assign to the contentInset the keyboard height
     UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0, kbSize.height, 0.0);
     self.contentInset = contentInsets;
     self.scrollIndicatorInsets = contentInsets;
     
     // If active text field is hidden by keyboard, scroll it so it's visible
-    // Your app might not need or want this behavior.
     CGRect aRect = self.superview.frame;
     aRect.size.height -= kbSize.height;
     if (!CGRectContainsPoint(aRect, self.activeField.frame.origin) ) {
@@ -85,9 +105,9 @@
     }
 }
 
-// Called when the UIKeyboardWillHideNotification is sent
 - (void)keyboardWillBeHidden:(NSNotification*)aNotification
 {
+    // Revert contentInset to the initial value
     UIEdgeInsets contentInsets = UIEdgeInsetsZero;
     self.contentInset = contentInsets;
     self.scrollIndicatorInsets = contentInsets;
