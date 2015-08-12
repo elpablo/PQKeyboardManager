@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		010145F41B7B75CE002309F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 010145F31B7B75CE002309F1 /* main.m */; };
+		010145F71B7B75CE002309F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 010145F61B7B75CE002309F1 /* AppDelegate.m */; };
+		010145FA1B7B75CE002309F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 010145F91B7B75CE002309F1 /* ViewController.m */; };
+		010145FD1B7B75CE002309F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 010145FB1B7B75CE002309F1 /* Main.storyboard */; };
+		010145FF1B7B75CE002309F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 010145FE1B7B75CE002309F1 /* Images.xcassets */; };
+		010146021B7B75CE002309F1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 010146001B7B75CE002309F1 /* LaunchScreen.xib */; };
+		0101460E1B7B75CE002309F1 /* PQKeyboardManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0101460D1B7B75CE002309F1 /* PQKeyboardManagerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		010146081B7B75CE002309F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 010145E61B7B75CE002309F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 010145ED1B7B75CE002309F1;
+			remoteInfo = PQKeyboardManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		010145EE1B7B75CE002309F1 /* PQKeyboardManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PQKeyboardManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		010145F21B7B75CE002309F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		010145F31B7B75CE002309F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		010145F51B7B75CE002309F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		010145F61B7B75CE002309F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		010145F81B7B75CE002309F1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		010145F91B7B75CE002309F1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		010145FC1B7B75CE002309F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		010145FE1B7B75CE002309F1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		010146011B7B75CE002309F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		010146071B7B75CE002309F1 /* PQKeyboardManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PQKeyboardManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0101460C1B7B75CE002309F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0101460D1B7B75CE002309F1 /* PQKeyboardManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PQKeyboardManagerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		010145EB1B7B75CE002309F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		010146041B7B75CE002309F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		010145E51B7B75CE002309F1 = {
+			isa = PBXGroup;
+			children = (
+				010145F01B7B75CE002309F1 /* PQKeyboardManager */,
+				0101460A1B7B75CE002309F1 /* PQKeyboardManagerTests */,
+				010145EF1B7B75CE002309F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		010145EF1B7B75CE002309F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				010145EE1B7B75CE002309F1 /* PQKeyboardManager.app */,
+				010146071B7B75CE002309F1 /* PQKeyboardManagerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		010145F01B7B75CE002309F1 /* PQKeyboardManager */ = {
+			isa = PBXGroup;
+			children = (
+				010145F51B7B75CE002309F1 /* AppDelegate.h */,
+				010145F61B7B75CE002309F1 /* AppDelegate.m */,
+				010145F81B7B75CE002309F1 /* ViewController.h */,
+				010145F91B7B75CE002309F1 /* ViewController.m */,
+				010145FB1B7B75CE002309F1 /* Main.storyboard */,
+				010145FE1B7B75CE002309F1 /* Images.xcassets */,
+				010146001B7B75CE002309F1 /* LaunchScreen.xib */,
+				010145F11B7B75CE002309F1 /* Supporting Files */,
+			);
+			path = PQKeyboardManager;
+			sourceTree = "<group>";
+		};
+		010145F11B7B75CE002309F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				010145F21B7B75CE002309F1 /* Info.plist */,
+				010145F31B7B75CE002309F1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0101460A1B7B75CE002309F1 /* PQKeyboardManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				0101460D1B7B75CE002309F1 /* PQKeyboardManagerTests.m */,
+				0101460B1B7B75CE002309F1 /* Supporting Files */,
+			);
+			path = PQKeyboardManagerTests;
+			sourceTree = "<group>";
+		};
+		0101460B1B7B75CE002309F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0101460C1B7B75CE002309F1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		010145ED1B7B75CE002309F1 /* PQKeyboardManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 010146111B7B75CE002309F1 /* Build configuration list for PBXNativeTarget "PQKeyboardManager" */;
+			buildPhases = (
+				010145EA1B7B75CE002309F1 /* Sources */,
+				010145EB1B7B75CE002309F1 /* Frameworks */,
+				010145EC1B7B75CE002309F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PQKeyboardManager;
+			productName = PQKeyboardManager;
+			productReference = 010145EE1B7B75CE002309F1 /* PQKeyboardManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		010146061B7B75CE002309F1 /* PQKeyboardManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 010146141B7B75CE002309F1 /* Build configuration list for PBXNativeTarget "PQKeyboardManagerTests" */;
+			buildPhases = (
+				010146031B7B75CE002309F1 /* Sources */,
+				010146041B7B75CE002309F1 /* Frameworks */,
+				010146051B7B75CE002309F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				010146091B7B75CE002309F1 /* PBXTargetDependency */,
+			);
+			name = PQKeyboardManagerTests;
+			productName = PQKeyboardManagerTests;
+			productReference = 010146071B7B75CE002309F1 /* PQKeyboardManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		010145E61B7B75CE002309F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = nEraLab;
+				TargetAttributes = {
+					010145ED1B7B75CE002309F1 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					010146061B7B75CE002309F1 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 010145ED1B7B75CE002309F1;
+					};
+				};
+			};
+			buildConfigurationList = 010145E91B7B75CE002309F1 /* Build configuration list for PBXProject "PQKeyboardManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 010145E51B7B75CE002309F1;
+			productRefGroup = 010145EF1B7B75CE002309F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				010145ED1B7B75CE002309F1 /* PQKeyboardManager */,
+				010146061B7B75CE002309F1 /* PQKeyboardManagerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		010145EC1B7B75CE002309F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				010145FD1B7B75CE002309F1 /* Main.storyboard in Resources */,
+				010146021B7B75CE002309F1 /* LaunchScreen.xib in Resources */,
+				010145FF1B7B75CE002309F1 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		010146051B7B75CE002309F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		010145EA1B7B75CE002309F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				010145FA1B7B75CE002309F1 /* ViewController.m in Sources */,
+				010145F71B7B75CE002309F1 /* AppDelegate.m in Sources */,
+				010145F41B7B75CE002309F1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		010146031B7B75CE002309F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0101460E1B7B75CE002309F1 /* PQKeyboardManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		010146091B7B75CE002309F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 010145ED1B7B75CE002309F1 /* PQKeyboardManager */;
+			targetProxy = 010146081B7B75CE002309F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		010145FB1B7B75CE002309F1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				010145FC1B7B75CE002309F1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		010146001B7B75CE002309F1 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				010146011B7B75CE002309F1 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0101460F1B7B75CE002309F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		010146101B7B75CE002309F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		010146121B7B75CE002309F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PQKeyboardManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		010146131B7B75CE002309F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PQKeyboardManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		010146151B7B75CE002309F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PQKeyboardManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PQKeyboardManager.app/PQKeyboardManager";
+			};
+			name = Debug;
+		};
+		010146161B7B75CE002309F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PQKeyboardManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PQKeyboardManager.app/PQKeyboardManager";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		010145E91B7B75CE002309F1 /* Build configuration list for PBXProject "PQKeyboardManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0101460F1B7B75CE002309F1 /* Debug */,
+				010146101B7B75CE002309F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		010146111B7B75CE002309F1 /* Build configuration list for PBXNativeTarget "PQKeyboardManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				010146121B7B75CE002309F1 /* Debug */,
+				010146131B7B75CE002309F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		010146141B7B75CE002309F1 /* Build configuration list for PBXNativeTarget "PQKeyboardManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				010146151B7B75CE002309F1 /* Debug */,
+				010146161B7B75CE002309F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 010145E61B7B75CE002309F1 /* Project object */;
+}
