@@ -2,4 +2,3 @@ language: objective-c
 osx_image: xcode6.4
 script:
 - xcodebuild -target PQKeyboardManager -configuration Debug -sdk iphonesimulator
-#- xcodebuild -project PQKeyboardManager.xcodeproj -scheme PQKeyboardManager -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO test
