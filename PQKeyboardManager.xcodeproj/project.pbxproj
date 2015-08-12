@@ -14,6 +14,7 @@
 		010145FF1B7B75CE002309F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 010145FE1B7B75CE002309F1 /* Images.xcassets */; };
 		010146021B7B75CE002309F1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 010146001B7B75CE002309F1 /* LaunchScreen.xib */; };
 		0101460E1B7B75CE002309F1 /* PQKeyboardManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0101460D1B7B75CE002309F1 /* PQKeyboardManagerTests.m */; };
+		0101461A1B7B7613002309F1 /* PQKeyboardManagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 010146191B7B7613002309F1 /* PQKeyboardManagerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		010146071B7B75CE002309F1 /* PQKeyboardManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PQKeyboardManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0101460C1B7B75CE002309F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0101460D1B7B75CE002309F1 /* PQKeyboardManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PQKeyboardManagerTests.m; sourceTree = "<group>"; };
+		010146181B7B7613002309F1 /* PQKeyboardManagerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PQKeyboardManagerView.h; path = PQKeyboardManagerView/PQKeyboardManagerView.h; sourceTree = "<group>"; };
+		010146191B7B7613002309F1 /* PQKeyboardManagerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PQKeyboardManagerView.m; path = PQKeyboardManagerView/PQKeyboardManagerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		010145F01B7B75CE002309F1 /* PQKeyboardManager */ = {
 			isa = PBXGroup;
 			children = (
+				010146171B7B75D9002309F1 /* PQKeyboardManagerView */,
 				010145F51B7B75CE002309F1 /* AppDelegate.h */,
 				010145F61B7B75CE002309F1 /* AppDelegate.m */,
 				010145F81B7B75CE002309F1 /* ViewController.h */,
@@ -117,6 +121,15 @@
 				0101460C1B7B75CE002309F1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		010146171B7B75D9002309F1 /* PQKeyboardManagerView */ = {
+			isa = PBXGroup;
+			children = (
+				010146181B7B7613002309F1 /* PQKeyboardManagerView.h */,
+				010146191B7B7613002309F1 /* PQKeyboardManagerView.m */,
+			);
+			name = PQKeyboardManagerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +234,7 @@
 			files = (
 				010145FA1B7B75CE002309F1 /* ViewController.m in Sources */,
 				010145F71B7B75CE002309F1 /* AppDelegate.m in Sources */,
+				0101461A1B7B7613002309F1 /* PQKeyboardManagerView.m in Sources */,
 				010145F41B7B75CE002309F1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
