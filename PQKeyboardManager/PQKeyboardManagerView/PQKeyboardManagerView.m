@@ -78,13 +78,20 @@
 - (void)textFieldDidBeginEditingNotification:(NSNotification *)notification
 {
     // get the current active text field
-    self.activeField = notification.object;
+    UITextField *tf = notification.object;
+    if ([tf isDescendantOfView:self]) {
+        // listen only children UITextFields
+        self.activeField = notification.object;
+    }
 }
 
 - (void)textFieldDidEndEditingNotification:(NSNotification *)notification
 {
-    // reset the active text field
-    self.activeField = nil;
+    UITextField *tf = notification.object;
+    if ([tf isDescendantOfView:self]) {
+        // reset the active text field
+        self.activeField = nil;
+    }
 }
 
 #pragma mark - Keyboard Management
@@ -103,29 +110,33 @@
 
 - (void)keyboardWasShown:(NSNotification*)aNotification
 {
-    // Retrieve the keyboard size
-    NSDictionary *info = [aNotification userInfo];
-    CGSize kbSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
-    
-    // Assign to the contentInset the keyboard height
-    UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0, kbSize.height, 0.0);
-    self.contentInset = contentInsets;
-    self.scrollIndicatorInsets = contentInsets;
-    
-    // If active text field is hidden by keyboard, scroll it so it's visible
-    CGRect aRect = self.superview.frame;
-    aRect.size.height -= kbSize.height;
-    if (!CGRectContainsPoint(aRect, self.activeField.frame.origin) ) {
-        [self scrollRectToVisible:self.activeField.frame animated:YES];
+    if (self.activeField) {
+        // Retrieve the keyboard size
+        NSDictionary *info = [aNotification userInfo];
+        CGSize kbSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
+        
+        // Assign to the contentInset the keyboard height
+        UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0, kbSize.height, 0.0);
+        self.contentInset = contentInsets;
+        self.scrollIndicatorInsets = contentInsets;
+        
+        // If active text field is hidden by keyboard, scroll it so it's visible
+        CGRect aRect = self.superview.frame;
+        aRect.size.height -= kbSize.height;
+        if (!CGRectContainsPoint(aRect, self.activeField.frame.origin) ) {
+            [self scrollRectToVisible:self.activeField.frame animated:YES];
+        }
     }
 }
 
 - (void)keyboardWillBeHidden:(NSNotification*)aNotification
 {
-    // Revert contentInset to the initial value
-    UIEdgeInsets contentInsets = UIEdgeInsetsZero;
-    self.contentInset = contentInsets;
-    self.scrollIndicatorInsets = contentInsets;
+    if (self.activeField) {
+        // Revert contentInset to the initial value
+        UIEdgeInsets contentInsets = UIEdgeInsetsZero;
+        self.contentInset = contentInsets;
+        self.scrollIndicatorInsets = contentInsets;
+    }
 }
 
 @end
