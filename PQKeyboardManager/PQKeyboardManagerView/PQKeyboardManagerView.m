@@ -117,13 +117,13 @@
         
         // Assign to the contentInset the keyboard height
         UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0, kbSize.height, 0.0);
-        self.contentInset = contentInsets;
-        self.scrollIndicatorInsets = contentInsets;
         
         // If active text field is hidden by keyboard, scroll it so it's visible
         CGRect aRect = self.superview.frame;
         aRect.size.height -= kbSize.height;
         if (!CGRectContainsPoint(aRect, self.activeField.frame.origin) ) {
+            self.contentInset = contentInsets;
+            self.scrollIndicatorInsets = contentInsets;
             [self scrollRectToVisible:self.activeField.frame animated:YES];
         }
     }
